@@ -1,0 +1,129 @@
+.hireme-btn-div{
+    font-size:x-large;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-areas:' . left center right .';
+    
+}
+.hireme-btn-div #left-arrow{
+    grid-area: left;
+    justify-self: end;
+}
+.hireme-btn-div #right-arrow{
+    transform: rotateY(180deg);
+    grid-area: right;
+}
+.hireme-btn-div img{
+    width: 200px;
+    display: inline;
+}
+.hire-me-btn{
+    height: max-content;
+    display: inline;
+    grid-area: center;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(0, 76, 255);
+    
+}
+.hire-me-btn{
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(184, 184, 184);
+    width: max-content;
+    /* display: inline-block;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+}
+.hire-me-btn:hover{
+    cursor: pointer;
+}
+
+/*Popup-CSS*/
+#hire-btn{
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgb(85, 85, 85);
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1000;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.hire-btn{cursor: pointer;}
+#hire-btn-cross{cursor: pointer;}
+#hire-btn-cross i{padding-top: 20px;}
+#hire-btn form input:focus{
+    background-color: rgba(0, 0, 0, 0.457);
+}
+.hire-btn-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+[class*="hire-btn-2-"] {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+}
+[class*="hire-btn-2-social-"] {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+[class*="hire-btn-2-social-"] a{
+    margin-left: 3px;
+    margin-top: 4.5px;
+}
+.hire-btn-2 .fab{
+    margin-left: 5px;
+    font-size: 16px;
+    color: black;
+}
+#hire-btn .fas,#hire-btn .fab,#hire-btn .fa, #hire-btn .fa-solid{
+    font-size: 16px;
+    color: black;
+}
+.hr-divider{
+    border-top-width: 1px;
+    height: 0;
+    border-color: #8a8a8a;
+    margin-bottom: 1rem;
+}
+
+/*Modal change*/
+#hire-btn.active,#hire-btn.active{
+    visibility: visible;
+    top: 50%;
+}
+form input{
+    border-width: 1px;
+    border-color: #8a8a8a;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+@media screen and (max-width: 600px) {
+    /* Arrows */
+    .hireme-btn-div img{
+        width: 100px;
+    }
+    .hire-me-btn{
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-self: center;
+        margin-top: 0;
+    }
+    .hireme-btn-div{
+        grid-template-columns:  30% 40% 30%;
+        grid-template-areas:' left center right';
+        text-align: center;
+    }
+}

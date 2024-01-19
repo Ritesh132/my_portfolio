@@ -1,0 +1,207 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritesh Gupta Graphic Design Potfolio">
+    <meta name="keywords" content="Rkg Graphic Design Potfolio, Graphic Design Potfolio, CGR Potfolio">
+    <meta name="author" content="Ritesh">
+    <title>RKG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/all.min.css">  <!--Font Awesome Icons-->
+    <link rel="shortcut icon" href="logo.png"><!--Website Logo -->
+    <link rel="stylesheet" href="my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="my-main-footer.css">    <!--        MFooter         -->
+    <link rel="stylesheet" href="all.css">    <!--        AllCss         -->
+    <link rel="stylesheet" href="hirebtn.css">    <!--        Hirebtn         -->
+    <script type="module" src="nav_foot.js"></script> <!--Template JS-->
+    <script src="text.js"></script> <!--Text JS-->
+    <style>
+      
+
+
+
+
+        
+          #codingList {
+            color: black;
+            transition: color 0.3s ease-in-out;
+            cursor: pointer;
+          }
+      
+          #codingList:hover {
+            color: blue;
+          }
+      
+          #codingSkills {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+          }
+      
+          #codingSkills li {
+            background-color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(147, 58, 254, 0.1);
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+          }
+      
+          #codingSkills li:hover {
+            background-color: #2d67ef;
+          }
+
+
+
+
+
+
+    .card img{
+            max-width: 600px;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.476);
+            border-radius: 5px;  
+            width: 100%;
+            box-shadow: 0px 5px 10px grey;
+        }
+        @media screen and (max-width: 600px) {
+            
+        }
+    </style>
+</head>
+<body>
+    <my-nav>
+        <nav>
+        <div class="logo"><a href="/"><img src="logo.png" alt="CGR LOGO"></a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menubtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a class="nav-blog" href="blog.html">BLOG</a></li>
+            <li>
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <input type="checkbox" id="drop-click">
+                        <label for="drop-click" class="nav-services dropclickbtn">
+                            SERVICES<i class="fa fa-caret-down"></i>
+                        </label>
+                        <div class="dropdown-content">
+                            <a href="graphic.html">GRAPHIC DESIGN</a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            <li><a class="nav-about" href="about.html">ABOUT</a></li>
+        </ul>
+    </nav>
+        </my-nav><br><br><br>
+    <header>
+    </header>
+    <main>
+        
+            
+                    <h1 style="padding: '60px'; font-family: 'outfit'; text-align:'center';
+                    display: 'inline-block'; background-color: rgb(8, 135, 247);
+                     "><br>Coding<br><br>
+                        </h1>
+             
+             
+            <ul id="codingSkills">
+              <li onclick="alertSkill('HTML')">HTML</li>
+              <li onclick="alertSkill('CSS')">CSS</li>
+              <li onclick="alertSkill('JavaScript')">JavaScript</li>
+              <li onclick="alertSkill('C/C++')">C/C++</li>
+              <li onclick="alertSkill('Java')">Java</li>
+              <li onclick="alertSkill('Node.js')">Node.js</li>
+              <li onclick="alertSkill('Ajax')">Ajax</li>
+              <li onclick="alertSkill('PHP')">PHP</li>
+              <li onclick="alertSkill('Python')">Python</li>
+            </ul>
+          
+            <script>
+              function alertSkill(skill) {
+                alert('this is ' + skill);
+              }
+            </script>
+           
+         
+        </div>
+        <br>
+    </main>
+
+    <script src="text.js"></script> <!--Text JS-->
+    <my-m-footer>
+        <footer>
+        <div class="foot-container">
+            <div class="nav-footer">
+                <div class="foot-sections-1">
+                    <div class="cgr">
+                        <div class="foot-image">
+                            <img src="logo.ico" alt="RK Profile Picture">
+                        </div>
+                        <h4>Ritesh Gupta</h4>
+                        <p>Multi-Passionate Gentleman</p>
+                    </div>
+                </div>
+                <div class="foot-sections-2">
+                    <div class="about">
+                        <h5>About</h5>
+                        <ul>
+                            <li><a href="about.html">Who am I?:</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-sections-3">
+                    <div class="f-my-brands">
+                        <h5>Brands</h5>
+                        <ul>
+                            <li><a href="nothing.html">Why it</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-sections-4">
+                    <div class="blogs">
+                        <h5>Recommended</h5>
+                        <ul>
+                            <li><a href="">Rkg -Personal</a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-sections-5">
+                    <div class="services">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="graphic.html">Graphic Designing</a></li>
+                            <!--<li><a href="">Video Editing</a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="foot-bottom">
+                <div class="social-buttons">
+                    <ul>
+                        <li><a href="https://facebook.com/ritesh" target="_blank"><i class="fab fa-facebook-f"></i> </a> </li>
+                        <li><a href="https://twitter.com/ritesh132" target="_blank"><i class="fab fa-twitter"></i>
+                            </a> </li>
+                        <li><a href="https://instagram.com/ritesh_14713/" target="_blank"><i class="fab fa-instagram"></i>
+                            </a> </li>
+                        <li><a href="https://youtube.com/@ritesh" target="_blank"><i class="fab fa-youtube"></i>
+                            </a> </li>
+                        <li><a href="https://linkedin.com/in/ritesh132" target="_blank"><i class="fab fa-linkedin-in"></i> </a> </li>
+                    </ul>
+                    <hr class="footer-divider hr-last">
+                </div>
+                <div class="copyright center-text">rkg</div>
+            </div>
+    </footer>
+        </my-m-footer>
+
+</body></html>

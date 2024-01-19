@@ -1,0 +1,225 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ritesh Gupta's Graphic Design Potfolio">
+    <meta name="keywords" content="CGR Graphic Design Potfolio, Graphic Design Potfolio, CGR Potfolio">
+    <meta name="author" content="Ritesh Gupta">
+    <title>Cool Designs - CGR Graphix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">  <!--Font Awesome Icons-->
+    <link rel="shortcut icon" type="image/webp" href="logo.ico"><!--Website Logo -->
+    <link rel="stylesheet" href="my-nav.css">    <!--        Navbar         -->
+    <link rel="stylesheet" href="my-main-footer.css">    <!--        MFooter         -->
+    <link rel="stylesheet" href="all.css">    <!--        AllCss         -->
+    <link rel="stylesheet" href="/css/hirebtn.css">    <!--        Hirebtn         -->
+    <script type="module" src="nav_foot.js"></script> <!--Template JS-->
+    <script src="/js template/text.js"></script> <!--Text JS-->
+    <style>
+
+        .row{
+            height: 450px;
+            width: 90%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .col{
+            display: inline-block;
+            width: 24%;
+            position: relative;
+            height: 400px;
+            margin: 5px;
+            object-fit: cover;
+            background-color: yellow;
+        }
+        .pot-img{
+            
+            width: 100%;
+            height: 400px;
+        }
+        .col img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            box-shadow: 5px 5px 5px 0px rgb(170, 170, 170);
+        }
+        /* img:nth-child(even){
+            background-image: linear-gradient(rgba(0, 0, 0, 0.775) 0%, rgba(0, 0, 0, 0) 50%),  url(../images/main/Cover_big.webp);
+        } */
+        /* img:nth-child(odd){
+            
+        } */
+        .col:nth-child(even){
+            top:10px;
+        }
+        .col:nth-child(4n){
+            top: -10px;
+            left: 20px;
+        }
+        .col:nth-child(7n){
+            top: -10px;
+            right: -10px;
+        }
+        .col:nth-child(3n){
+            top: -20px;
+            right: -10px;
+        }
+        .col:nth-child(5n){
+            right: 20px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .row{
+                height: 1650px;
+            }
+            .col{
+                width: 90%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <my-nav>
+        <nav>
+        <div class="logo"><a href="/"><img src="logo.png" alt="RKG LOGO"></a></div>
+       
+        </label>
+        <ul>
+            <li><a class="nav-blog" href="/blog/">BLOG</a></li>
+            <li>
+                <div class="dropdown">
+                    <div class="dropbtn">
+                        <input type="checkbox" id="drop-click">
+                        <label for="drop-click" class="nav-services dropclickbtn">
+                            SERVICES<i class="fa fa-caret-down"></i>
+                        </label>
+                        <div class="dropdown-content">
+                            <a href="graphic.html">GRAPHIC DESIGN</a>
+                            <!--<a href="/services/video-editing/">VIDEO EDITING</a>-->
+                        </div>
+                    </div>
+                    
+                </div>
+            </li>
+            <li><a class="nav-about" href="/about/">ABOUT</a></li>
+        </ul>
+    </nav>
+        </my-nav>
+    <header>
+    </header>
+    <main>
+        <br><br>
+        <h1>Cool Designs 🔥</h1>
+        <br>
+        <div class="top-main-section">
+            <div class="row">
+                <div class="col"><img src="flower-color-change.webp"></div>
+                <div class="col"><img src="fresh.jpg"></div>
+                <div class="col"><img src="dreamd.jpg"></div>
+                <div class="col"><img src="HAPPY New Year.png"></div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="Water-color-effect-mountains.webp"></div>
+                <div class="col"><img src="titli.jpg"></div>
+                <div class="col"><img src="canva.png"></div>
+                <div class="col"><img src="rk logo.png"></div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="Duotone-nike-word.webp"></div>
+                <div class="col"><img src="glowing-orb-red.webp"></div>
+                <div class="col"><img src="logo.png"  ></div>
+                <div class="col"><img src="bot.png"></div>
+            </div>
+            
+            </div>
+        </div>
+
+        <br>
+        
+        <div class="just-text">
+            <h1>Words...</h1><br>
+            <p>Graphic Designing is my hobbey. 🔥</p>
+        </div>
+        <br><br><br>
+    </main>
+
+    
+
+    
+    <button onclick="topFunction()" id="toTopbtn" title="Go to top" style="display: none;"><i class="fas fa-arrow-up"></i></button>
+    <script src="text.js"></script> <!--Text JS-->
+    <my-m-footer>
+        <footer>
+        <div class="foot-container">
+            <div class="nav-footer">
+                <div class="foot-sections-1">
+                    <div class="cgr">
+                        <div class="foot-image">
+                            <img src="logo.ico" alt="Ritesh Gupta Profile Picture">
+                        </div>
+                        <h4>Ritesh Gupta</h4>
+                        <p>Multi-Passionate Gentleman</p>
+                    </div>
+                </div>
+                <div class="foot-sections-2">
+                    <div class="about">
+                        <h5>About</h5>
+                        <ul>
+                            <li><a href="/about/">Who am I?:</a></li>
+                            <li><a href="/blog/">Blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-sections-3">
+                    <div class="f-my-brands">
+                        <h5>Brands</h5>
+                        <ul>
+                            <li><a href="youtube.com/theeducationvalley/">Education Valley</a></li>
+                            <li><a href="/whyit-updates/">Why it</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCf-OCdnAE1DC9Onfuwkz8RQ">CGR Music</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-sections-4">
+                    <div class="blogs">
+                        <h5>Recommended</h5>
+                        <ul>
+                            <li><a href="">CGR's -Personal</a></li>
+                            <li><a href="/blog/cgr-favourite-quotes/">Favourite Quotes</a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot-sections-5">
+                    <div class="services">
+                        <h5>Services</h5>
+                        <ul>
+                            <li><a href="/services/graphic-designing/">Graphic Designing</a></li>
+                            <!--<li><a href="">Video Editing</a></li>-->
+                            <li><a href="/services/youtube-thumbnail/">YouTube Thumbnail</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="foot-bottom">
+                <div class="social-buttons">
+                    <ul>
+                        <li><a href="https://facebook.com/thechandraguptaroy" target="_blank"><i class="fab fa-facebook-f"></i> </a> </li>
+                        <li><a href="https://twitter.com/thecgrx" target="_blank"><i class="fab fa-twitter"></i> </a> </li>
+                        <li><a href="https://instagram.com/thecgr/" target="_blank"><i class="fab fa-instagram"></i> </a> </li>
+                        <li><a href="https://youtube.com/@thecgr" target="_blank"><i class="fab fa-youtube"></i> </a> </li>
+                        <li><a href="https://linkedin.com/in/thecgr" target="_blank"><i class="fab fa-linkedin-in"></i> </a> </li>
+                    </ul>
+                    <hr class="footer-divider hr-last">
+                </div>
+                <div class="copyright center-text">© 2024 CGRDesignX</div>
+            </div>
+        </div>
+    </footer>
+        </my-m-footer>
+
+</body></html>

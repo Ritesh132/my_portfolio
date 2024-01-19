@@ -1,0 +1,150 @@
+/*Include in all the webpages except in home page*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*Paragraphs Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/*for font " quote  Use: font-family: 'Space Grotesk', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.cdnfonts.com/css/blanka'); /*Main*/
+@import url(https://db.onlinewebfonts.com/c/8cdbb48678e4418f22a2f507c2b975bd?family=Blanka-Regular);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: "Blanka-Regular";
+    src: url("https://db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot");
+    src: url("https://db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/8cdbb48678e4418f22a2f507c2b975bd.svg#Blanka-Regular")format("svg");}
+*{
+    font-family: 'outfit', sans-serif;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Blanka', sans-serif;
+    font-family: "Blanka-Regular";
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+p,ul,li,span{
+    font-family: 'outfit', sans-serif;
+    line-height: 1.65;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+h5{
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+h4{
+    margin: 0;
+    margin-top: 0.5rem;
+}
+button{
+    cursor: pointer;
+}
+.pointer{
+    cursor: pointer;
+}
+.small-text{font-size: smaller;}
+.center-text{text-align: center;}
+.left-text{text-align: left;}
+.right-text{text-align: right;}
+.italic-text{font-style: italic;}
+.my-hr{
+    border-top-width: 1.5px;
+    color: #595e67;
+}
+.block-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.just-text{ /* just for writing simple text around */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+
+@media screen and (max-width: 600px) {
+    .just-text{  /* just for writing simple text around */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+/*             Responsive         Start */
+/* For mobile phones: */
+.row::after {
+    content: "";
+    clear: both;
+    display: table; }
+[class*="col-"] {
+    float: left;
+    padding: 15px; }
+[class*="col-"] {
+width: 100%;
+}
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+.col-s-1 { width: 8.33%; }
+.col-s-2 { width: 16.66%;}
+.col-s-3 { width: 25%; }
+.col-s-4 { width: 33.33%; }
+.col-s-5 { width: 41.66%;}
+.col-s-6 { width: 50%; }
+.col-s-7 { width: 58.33%; }
+.col-s-8 { width: 66.66%; }
+.col-s-9 { width: 75%; }
+.col-s-10 { width: 83.33%; }
+.col-s-11 { width: 91.66%; }
+.col-s-12 { width: 100%; }
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 23%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+}
+/*             Responsive         End */
+
+/*        To top button      Start */
+#toTopbtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border-radius: 50%;
+    background-color: rgb(16, 16, 16);
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    transition: all 0.5s ease 0s;
+}
+#toTopbtn .fas{
+    font-size: large;
+}
+#toTopbtn:hover {
+    background-color: #555;
+}
+/*        To top button      End */
